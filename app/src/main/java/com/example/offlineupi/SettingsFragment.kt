@@ -6,17 +6,24 @@ import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import com.google.android.material.materialswitch.MaterialSwitch
 
 class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
-    // Inside SettingsFragment.kt
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Developer Link
+        // Dark mode toggle
+        val darkModeSwitch = view.findViewById<MaterialSwitch>(R.id.darkModeSwitch)
+        val mainActivity = activity as? MainActivity
+        darkModeSwitch.isChecked = mainActivity?.isDarkMode() ?: false
+        darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            mainActivity?.toggleDarkMode(isChecked)
+        }
+
+        // Developer link
         view.findViewById<LinearLayout>(R.id.btnDeveloper).setOnClickListener {
-            val developerUrl = "https://github.com/yourusername" // Replace with your actual link
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(developerUrl))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/parthkhxndelwal"))
             startActivity(intent)
         }
 

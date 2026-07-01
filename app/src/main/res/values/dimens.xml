@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing (4px grid) -->
+    <dimen name="space_1">4dp</dimen>
+    <dimen name="space_2">8dp</dimen>
+    <dimen name="space_3">12dp</dimen>
+    <dimen name="space_4">16dp</dimen>
+    <dimen name="space_5">20dp</dimen>
+    <dimen name="space_6">24dp</dimen>
+    <dimen name="space_7">32dp</dimen>
+    <dimen name="space_8">40dp</dimen>
+    <dimen name="space_9">48dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="radius_sm">6dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+    <dimen name="radius_lg">12dp</dimen>
+    <dimen name="radius_xl">16dp</dimen>
+    <dimen name="radius_full">9999dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_sm">1dp</dimen>
+    <dimen name="elevation_md">2dp</dimen>
+    <dimen name="elevation_lg">4dp</dimen>
+    <dimen name="elevation_xl">8dp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_xs">16dp</dimen>
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_xl">40dp</dimen>
+    <dimen name="icon_xxl">48dp</dimen>
+
+    <!-- Font sizes (Shadcn scale) -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_base">14sp</dimen>
+    <dimen name="text_lg">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_2xl">20sp</dimen>
+    <dimen name="text_3xl">24sp</dimen>
+    <dimen name="text_4xl">30sp</dimen>
+
+    <!-- Component heights -->
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="input_height">44dp</dimen>
+    <dimen name="bottom_nav_height">64dp</dimen>
+    <dimen name="action_card_height">88dp</dimen>
+
+    <!-- Layout margins -->
+    <dimen name="page_margin_horizontal">16dp</dimen>
+    <dimen name="page_margin_top">16dp</dimen>
+</resources>

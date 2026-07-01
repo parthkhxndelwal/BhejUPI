@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Shadcn / GPay-inspired palette — Light -->
+
+    <!-- Base neutrals -->
+    <color name="background">#FAFAFA</color>
+    <color name="foreground">#18181B</color>
+
+    <!-- Cards & surfaces -->
+    <color name="card">#FFFFFF</color>
+    <color name="card_foreground">#18181B</color>
+    <color name="popover">#FFFFFF</color>
+    <color name="popover_foreground">#18181B</color>
+
+    <!-- Primary (GPay blue → Shadcn blue) -->
+    <color name="primary">#3B82F6</color>
+    <color name="primary_foreground">#FFFFFF</color>
+    <color name="primary_container">#DBEAFE</color>
+    <color name="on_primary_container">#1E3A5F</color>
+
+    <!-- Secondary (zinc-100) -->
+    <color name="secondary">#F4F4F5</color>
+    <color name="secondary_foreground">#18181B</color>
+
+    <!-- Muted -->
+    <color name="muted">#F4F4F5</color>
+    <color name="muted_foreground">#71717A</color>
+
+    <!-- Accent -->
+    <color name="accent">#F4F4F5</color>
+    <color name="accent_foreground">#18181B</color>
+
+    <!-- Semantic -->
+    <color name="destructive">#EF4444</color>
+    <color name="destructive_foreground">#FAFAFA</color>
+    <color name="success">#10B981</color>
+    <color name="success_foreground">#FFFFFF</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warning_foreground">#FFFFFF</color>
+
+    <!-- Borders & inputs -->
+    <color name="border">#E4E4E7</color>
+    <color name="input">#E4E4E7</color>
+    <color name="ring">#3B82F6</color>
+
+    <!-- Bottom navigation -->
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="bottom_nav_icon_active">#3B82F6</color>
+    <color name="bottom_nav_icon_inactive">#A1A1AA</color>
 </resources>

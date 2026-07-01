@@ -3,205 +3,272 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FA">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:paddingHorizontal="@dimen/page_margin_horizontal"
+        android:paddingTop="@dimen/space_5"
+        android:paddingBottom="@dimen/space_8">
 
+        <!-- Header -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:text="@string/settings"
+            android:textSize="@dimen/text_xl"
+            android:textColor="@color/foreground"
+            android:fontFamily="sans-serif-medium" />
 
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About TurantPay"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+        <!-- ─── Profile Card ─────────────────────────────────────────── -->
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="2dp"
-            android:layout_marginBottom="24dp">
+            android:layout_marginTop="@dimen/space_5"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="@dimen/elevation_none"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border"
+            app:cardBackgroundColor="@color/card">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:padding="@dimen/space_4">
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    android:importantForAccessibility="no" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="16dp">
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/space_3"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TurantPay v1.0.0"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/text_lg"
+                        android:textColor="@color/foreground"
+                        android:fontFamily="sans-serif-medium" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Instant. Offline. Secure."
-                        android:textSize="12sp"
-                        android:textColor="#757575" />
+                        android:text="@string/version"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/muted_foreground"
+                        android:layout_marginTop="1dp" />
+
                 </LinearLayout>
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <!-- ─── Section: General ─────────────────────────────────────── -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Important Information"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:text="@string/general"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/muted_foreground"
+            android:letterSpacing="0.04"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_marginStart="@dimen/space_1" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="2dp"
-            android:layout_marginBottom="24dp">
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="@dimen/elevation_none"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border"
+            app:cardBackgroundColor="@color/card">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/security_notice_title"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dark_mode"
+                        android:textSize="@dimen/text_base"
+                        android:textColor="@color/foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dark_mode_description"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/muted_foreground" />
+
+                </LinearLayout>
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/darkModeSwitch"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🛡 Security Notice"
-                    android:textStyle="bold"
-                    android:textColor="#1A73E8"
-                    android:layout_marginBottom="8dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="This app provides quick access to USSD banking codes. Due to Android security restrictions, USSD responses cannot be captured programmatically. All responses will appear in the system's native USSD dialog."
-                    android:textSize="13sp"
-                    android:textColor="#444444" />
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <!-- ─── Section: Support ─────────────────────────────────────── -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="USSD Information"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:text="@string/support"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/muted_foreground"
+            android:letterSpacing="0.04"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_marginStart="@dimen/space_1" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            android:layout_marginBottom="24dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical">
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="@dimen/elevation_none"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border"
+            app:cardBackgroundColor="@color/card">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="*99# is India's unified payment interface (UPI) code for feature phones and basic mobiles. It works without internet and is available on all mobile networks."
-                    android:textSize="14sp"
-                    android:textColor="#444444"
-                    android:layout_marginBottom="12dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#EEEEEE"
-                    android:layout_marginBottom="12dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Features:"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="✓ No internet required\n✓ Works on any mobile network\n✓ Completely free to use\n✓ Secure banking transactions\n✓ Available 24/7"
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Support"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="2dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <!-- NPCI Helpline -->
                 <LinearLayout
                     android:id="@+id/btnHelpline"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="52dp"
                     android:gravity="center_vertical"
-                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/space_4"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/npci_helpline"
+                        android:textSize="@dimen/text_base"
+                        android:textColor="@color/foreground" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="📞 NPCI Helpline: 1800-120-1740" />
+                        android:text="@string/npci_helpline_number"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/muted_foreground"
+                        android:layout_marginEnd="@dimen/space_2" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_md"
+                        android:layout_height="@dimen/icon_md"
+                        android:src="@drawable/ic_chevron_right"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/muted_foreground" />
+
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#EEEEEE" />
+                    android:background="@color/border"
+                    android:layout_marginStart="@dimen/space_4" />
 
+                <!-- Developer -->
                 <LinearLayout
                     android:id="@+id/btnDeveloper"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="52dp"
                     android:gravity="center_vertical"
-                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/space_4"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?attr/selectableItemBackground">
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="💻 App Developer-RAJUReDDY" />
+                        android:layout_weight="1"
+                        android:text="Developer"
+                        android:textSize="@dimen/text_base"
+                        android:textColor="@color/foreground" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_md"
+                        android:layout_height="@dimen/icon_md"
+                        android:src="@drawable/ic_chevron_right"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/muted_foreground" />
+
                 </LinearLayout>
+
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <!-- ─── Section: About ──────────────────────────────────────── -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/muted_foreground"
+            android:letterSpacing="0.04"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_marginStart="@dimen/space_1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/radius_lg"
+            app:cardElevation="@dimen/elevation_none"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/border"
+            app:cardBackgroundColor="@color/card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_4"
+                android:text="@string/app_description"
+                android:textSize="@dimen/text_sm"
+                android:textColor="@color/muted_foreground"
+                android:lineSpacingExtra="4dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
     </LinearLayout>
 </ScrollView>

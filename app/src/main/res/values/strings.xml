@@ -1,5 +1,52 @@
 <resources>
-    <string name="app_name">offlineupi</string>
-    <string name="acc_desc">Automated PIN entry for UPI</string>
+    <string name="app_name">BhejUPI</string>
+    <string name="acc_desc">USSD-based UPI payments without internet</string>
 
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home screen -->
+    <string name="tap_to_check_balance">Tap to check balance</string>
+    <string name="checking_balance">Checking balance…</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="send_to_mobile">Send to Mobile</string>
+    <string name="send_to_bank">Send to Bank</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="mini_statement">Mini Statement</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="no_recent_transactions">No transactions yet</string>
+
+    <!-- Transaction -->
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_upi_pin">Enter UPI PIN</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="cancel">Cancel</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="transaction_cancelled">Transaction Cancelled</string>
+
+    <!-- History -->
+    <string name="transactions">Transactions</string>
+    <string name="delete_history">Delete this record?</string>
+    <string name="delete_confirm">Delete</string>
+    <string name="no_history_yet">No transactions yet</string>
+    <string name="no_history_description">Your completed payments will appear here</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="general">General</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_description">Use dark theme</string>
+    <string name="support">Support</string>
+    <string name="npci_helpline">NPCI Helpline</string>
+    <string name="npci_helpline_number">1800-120-1740</string>
+    <string name="about">About</string>
+    <string name="version">Version %s</string>
+    <string name="app_description">USSD-based UPI payments. Works without internet.</string>
+    <string name="powered_by">Powered by *99#</string>
+
+    <!-- Accessibility -->
+    <string name="accessibility_service_description">BhejUPI Accessibility Service</string>
 </resources>

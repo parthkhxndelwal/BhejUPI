@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shadcn palette — Dark -->
+
+    <!-- Base neutrals -->
+    <color name="background">#09090B</color>
+    <color name="foreground">#FAFAFA</color>
+
+    <!-- Cards & surfaces -->
+    <color name="card">#18181B</color>
+    <color name="card_foreground">#FAFAFA</color>
+    <color name="popover">#18181B</color>
+    <color name="popover_foreground">#FAFAFA</color>
+
+    <!-- Primary -->
+    <color name="primary">#3B82F6</color>
+    <color name="primary_foreground">#FAFAFA</color>
+    <color name="primary_container">#1E3A5F</color>
+    <color name="on_primary_container">#DBEAFE</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#27272A</color>
+    <color name="secondary_foreground">#FAFAFA</color>
+
+    <!-- Muted -->
+    <color name="muted">#27272A</color>
+    <color name="muted_foreground">#A1A1AA</color>
+
+    <!-- Accent -->
+    <color name="accent">#27272A</color>
+    <color name="accent_foreground">#FAFAFA</color>
+
+    <!-- Semantic -->
+    <color name="destructive">#EF4444</color>
+    <color name="destructive_foreground">#FAFAFA</color>
+    <color name="success">#10B981</color>
+    <color name="success_foreground">#FFFFFF</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warning_foreground">#FFFFFF</color>
+
+    <!-- Borders & inputs -->
+    <color name="border">#27272A</color>
+    <color name="input">#27272A</color>
+    <color name="ring">#3B82F6</color>
+
+    <!-- Bottom navigation -->
+    <color name="bottom_nav_bg">#18181B</color>
+    <color name="bottom_nav_icon_active">#3B82F6</color>
+    <color name="bottom_nav_icon_inactive">#52525B</color>
+</resources>

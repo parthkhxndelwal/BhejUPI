@@ -1,9 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Offlineupi" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Theme.BhejUPI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Shadcn color mapping -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary_foreground</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/secondary_foreground</item>
+
+        <item name="colorTertiary">@color/success</item>
+        <item name="colorOnTertiary">@color/success_foreground</item>
+
+        <item name="colorSurface">@color/background</item>
+        <item name="colorOnSurface">@color/foreground</item>
+        <item name="colorSurfaceVariant">@color/card</item>
+        <item name="colorOnSurfaceVariant">@color/muted_foreground</item>
+
+        <item name="colorOutline">@color/border</item>
+        <item name="colorError">@color/destructive</item>
+        <item name="colorOnError">@color/destructive_foreground</item>
     </style>
 
-    <style name="Theme.Offlineupi" parent="Base.Theme.Offlineupi" />
+    <!-- Card style -->
+    <style name="Widget.BhejUPI.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Elevated card -->
+    <style name="Widget.BhejUPI.Card.Elevated" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
 </resources>
